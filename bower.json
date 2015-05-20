@@ -1,0 +1,19 @@
+{
+  "name": "lion",
+  "main": "lion.css",
+  "version": "1.0.0",
+  "homepage": "http://www.lionui.com",
+  "authors": [
+    "Julian Salas"
+  ],
+  "description": "a responsive framework",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower",
+    "test",
+    "tests"
+  ]
+}
