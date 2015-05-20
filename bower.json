@@ -14,6 +14,7 @@
     "bower_components",
     "bower",
     "test",
-    "tests"
+    "tests",
+    "examples"
   ]
 }
