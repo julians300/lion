@@ -1,0 +1,48 @@
+/* –––––––––––––––––––––––––– Typography –––––––––––––––––––––––––– */
+
+p{
+	line-height: 1.5em;
+	margin: 0 0 2em 0;
+}
+h1,h2,h3,h4,h5,h6 {
+  line-height: 1em;
+  letter-spacing: -.02em;
+  
+}
+h1{
+  font-size: 2em;
+  margin-bottom: .5em;
+}
+h2{
+	font-size: 1.5em;
+	margin-bottom: .6em;
+}
+h3{
+	font-size: 1.25em;
+  line-height: 1.2em;
+  margin-bottom: .7em;
+}
+h4{
+	font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: .8em;
+}
+h5{
+	font-size: 0.875em;
+  line-height: 1.14286em;
+  margin-bottom: .9em;
+}
+h6{
+	font-size: 0.75em;
+  line-height: 1.33333em;
+  margin-bottom: 1em;
+}
+
+a{
+	text-decoration: none;
+	color: #2a94d6;
+}
+
+.title{
+	margin-bottom: 1.5em;
+}

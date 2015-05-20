@@ -1,0 +1,22 @@
+/* –––––––––––––––––––––––––– Tables –––––––––––––––––––––––––– */
+
+table{
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 2em;
+}
+th {
+  font-weight: bold;
+  border-bottom: 2px solid;
+}
+td {
+  border-bottom: 1px solid;
+}
+th, td {
+  padding: 15px 15px;
+  text-align: left;
+  border-color: #E1E1E1;
+}
+table.striped>tbody>tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
