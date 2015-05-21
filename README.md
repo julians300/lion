@@ -30,7 +30,4 @@ The watch command runs the same css and js functions but also watches the files 
 
 ### License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
-
-
-
+Lion framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
