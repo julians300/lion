@@ -481,9 +481,11 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
 /* –––––––––––––––––––––––––– Tables –––––––––––––––––––––––––– */
 
 table{
-  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
   margin-bottom: 2em;
+  overflow-x: scroll;
+  display: block;
 }
 th {
   font-weight: bold;
