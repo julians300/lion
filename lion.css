@@ -69,185 +69,6 @@ table {
 img{
 	max-width: 100%;
 }
-/* –––––––––––––––––––––––––– Alerts –––––––––––––––––––––––––– */
-
-.alert{
-  max-height: none;
-  opacity: 1;
-  padding: 1em;
-  border-radius: 5px;
-  background-color: #72c06e;
-  color: white;
-  margin: 1em 0;
-}
-.alert.success{
-  background-color: #72c06e;
-}
-.alert.danger{
-  background-color: #E24444;
-}
-.alert.warning{
-	  background-color: #ECC321;
-}
-.alert.info{
-	  background-color: #30BAEC;
-}
-.alert .close{
-  position: absolute;
-  right: 20px;
-  background: none;
-  border: none;
-  line-height: 5px;
-  padding: 0;
-  font-size: 10px;
-  height: 20px;
-  cursor: pointer;
-}
-.alert .close:before{
-content: "x";
-color: white;
-}
-.alert.closed{
-}
-/* –––––––––––––––––––––––––– Buttons –––––––––––––––––––––––––– */
-
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: #555;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 38px;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #bbb;
-  cursor: pointer;
-  box-sizing: border-box; }
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-.button:focus,
-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-input[type="button"]:focus {
-  color: #333;
-  border-color: #888;
-  outline: 0; }
-.button.primary,
-button.primary,
-input[type="submit"].primary,
-input[type="reset"].primary,
-input[type="button"].primary {
-  color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
-.button.primary:hover,
-button.primary:hover,
-input[type="submit"].primary:hover,
-input[type="reset"].primary:hover,
-input[type="button"].primary:hover,
-.button.primary:focus,
-button.primary:focus,
-input[type="submit"].primary:focus,
-input[type="reset"].primary:focus,
-input[type="button"].primary:focus {
-  color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB;
-}
-
-.button.secondary,
-button.secondary,
-input[type="submit"].secondary,
-input[type="reset"].secondary,
-input[type="button"].secondary {
-  color: #FFF;
-  background-color: #9F56E2;
-  border-color: #8645F5;
-}
-.button.secondary:hover,
-button.secondary:hover,
-input[type="submit"].secondary:hover,
-input[type="reset"].secondary:hover,
-input[type="button"].secondary:hover,
-.button.secondary:focus,
-button.secondary:focus,
-input[type="submit"].secondary:focus,
-input[type="reset"].secondary:focus,
-input[type="button"].secondary:focus {
-  color: #FFF;
-  background-color: #7737A9;
-  border-color: #791EDB;
-}
-.button.white{
-  border-color: white;
-  color: white;
-}
-.button.white.primary{
-  background-color: #FFF;
-  color: #33C3F0;
-}
-
-/* –––––––––––––––––––––––––– Extras –––––––––––––––––––––––––– */
-
-pre, blockquote, dl, figure, table, p, ul, ol, form {
-  margin-bottom: 2.5rem;
-}
-/* box sizing for easy grids and alignment */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/* code */
-pre{
-  background: #f7f7f7;
-  border-radius: 3px;
-}
-code{
-	font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
-    padding: 20px 30px 30px;
-  display: block;
-  color: #696969;
-  font-size: 14px;
-}
-/* –––––––––––––––––––––––––– Forms –––––––––––––––––––––––––– */
-
-label, legend {
-  display: block;
-  margin-bottom: .5rem;
-  font-weight: 400;
-}
-input, textarea, select, fieldset {
-  margin-bottom: 1.5rem;
-}
-
-input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
-  height: 38px;
-  padding: 6px 10px;
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
-  box-shadow: none;
-  box-sizing: border-box;
-}
-.u-full-width {
-  width: 100%;
-  box-sizing: border-box;
-}
 /* –––––––––––––––––––––––––– Grid –––––––––––––––––––––––––– */
 .container {
   width: 100%;
@@ -297,25 +118,53 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   .two-thirds.column              { width: 65.3333333333%; }
   .one-half.column                { width: 48%; }
 }
-/* –––––––––––––––––––––––––– Lists –––––––––––––––––––––––––– */
+/* –––––––––––––––––––––––––– Typography –––––––––––––––––––––––––– */
 
-ul, ol{
-	  margin-bottom: 2.5rem;
+p{
+	line-height: 1.5em;
+	margin: 0 0 2em 0;
+}
+h1,h2,h3,h4,h5,h6 {
+  line-height: 1em;
+  letter-spacing: -.02em;
+  
+}
+h1{
+  font-size: 2em;
+  margin-bottom: .5em;
+}
+h2{
+	font-size: 1.5em;
+	margin-bottom: .6em;
+}
+h3{
+	font-size: 1.25em;
+  line-height: 1.2em;
+  margin-bottom: .7em;
+}
+h4{
+	font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: .8em;
+}
+h5{
+	font-size: 0.875em;
+  line-height: 1.14286em;
+  margin-bottom: .9em;
+}
+h6{
+	font-size: 0.75em;
+  line-height: 1.33333em;
+  margin-bottom: 1em;
 }
 
-ul {
-  list-style: disc inside;
-}
-ol {
-  list-style: decimal inside;
+a{
+	text-decoration: none;
+	color: #2a94d6;
 }
 
-li {
-  margin-bottom: 1rem;
-}
-ul ul, ul ol, ol ol, ol ul {
-  margin: 1.5rem 0 1.5rem 3rem;
-  font-size: 90%;
+.title{
+	margin-bottom: 1.5em;
 }
 /* –––––––––––––––––––––––––– Navigation –––––––––––––––––––––––––– */
 
@@ -513,6 +362,122 @@ nav .hamburger .line {
 }
 
 
+/* –––––––––––––––––––––––––– Buttons –––––––––––––––––––––––––– */
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+.button.primary,
+button.primary,
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0; }
+.button.primary:hover,
+button.primary:hover,
+input[type="submit"].primary:hover,
+input[type="reset"].primary:hover,
+input[type="button"].primary:hover,
+.button.primary:focus,
+button.primary:focus,
+input[type="submit"].primary:focus,
+input[type="reset"].primary:focus,
+input[type="button"].primary:focus {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB;
+}
+
+.button.secondary,
+button.secondary,
+input[type="submit"].secondary,
+input[type="reset"].secondary,
+input[type="button"].secondary {
+  color: #FFF;
+  background-color: #9F56E2;
+  border-color: #8645F5;
+}
+.button.secondary:hover,
+button.secondary:hover,
+input[type="submit"].secondary:hover,
+input[type="reset"].secondary:hover,
+input[type="button"].secondary:hover,
+.button.secondary:focus,
+button.secondary:focus,
+input[type="submit"].secondary:focus,
+input[type="reset"].secondary:focus,
+input[type="button"].secondary:focus {
+  color: #FFF;
+  background-color: #7737A9;
+  border-color: #791EDB;
+}
+.button.white{
+  border-color: white;
+  color: white;
+}
+.button.white.primary{
+  background-color: #FFF;
+  color: #33C3F0;
+}
+
+/* –––––––––––––––––––––––––– Forms –––––––––––––––––––––––––– */
+
+label, legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 400;
+}
+input, textarea, select, fieldset {
+  margin-bottom: 1.5rem;
+}
+
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
+  height: 38px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
 /* –––––––––––––––––––––––––– Tables –––––––––––––––––––––––––– */
 
 table{
@@ -535,53 +500,65 @@ th, td {
 table.striped>tbody>tr:nth-of-type(odd) {
   background-color: #f9f9f9;
 }
-/* –––––––––––––––––––––––––– Typography –––––––––––––––––––––––––– */
+/* –––––––––––––––––––––––––– Alerts –––––––––––––––––––––––––– */
 
-p{
-	line-height: 1.5em;
-	margin: 0 0 2em 0;
+.alert{
+  max-height: none;
+  opacity: 1;
+  padding: 1em;
+  border-radius: 5px;
+  background-color: #72c06e;
+  color: white;
+  margin: 1em 0;
 }
-h1,h2,h3,h4,h5,h6 {
-  line-height: 1em;
-  letter-spacing: -.02em;
-  
+.alert.success{
+  background-color: #72c06e;
 }
-h1{
-  font-size: 2em;
-  margin-bottom: .5em;
+.alert.danger{
+  background-color: #E24444;
 }
-h2{
-	font-size: 1.5em;
-	margin-bottom: .6em;
+.alert.warning{
+	  background-color: #ECC321;
 }
-h3{
-	font-size: 1.25em;
-  line-height: 1.2em;
-  margin-bottom: .7em;
+.alert.info{
+	  background-color: #30BAEC;
 }
-h4{
-	font-size: 1em;
-  line-height: 1.5em;
-  margin-bottom: .8em;
+.alert .close{
+  position: absolute;
+  right: 20px;
+  background: none;
+  border: none;
+  line-height: 5px;
+  padding: 0;
+  font-size: 10px;
+  height: 20px;
+  cursor: pointer;
 }
-h5{
-	font-size: 0.875em;
-  line-height: 1.14286em;
-  margin-bottom: .9em;
+.alert .close:before{
+content: "x";
+color: white;
 }
-h6{
-	font-size: 0.75em;
-  line-height: 1.33333em;
-  margin-bottom: 1em;
+.alert.closed{
+}
+/* –––––––––––––––––––––––––– Lists –––––––––––––––––––––––––– */
+
+ul, ol{
+	  margin-bottom: 2.5rem;
 }
 
-a{
-	text-decoration: none;
-	color: #2a94d6;
+ul {
+  list-style: disc inside;
+}
+ol {
+  list-style: decimal inside;
 }
 
-.title{
-	margin-bottom: 1.5em;
+li {
+  margin-bottom: 1rem;
+}
+ul ul, ul ol, ol ol, ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%;
 }
 /* –––––––––––––––––––––––––– Utilities –––––––––––––––––––––––––– */
 
@@ -594,4 +571,28 @@ a{
 }
 .block{
 	display: block;
+}
+/* –––––––––––––––––––––––––– Extras –––––––––––––––––––––––––– */
+
+pre, blockquote, dl, figure, table, p, ul, ol, form {
+  margin-bottom: 2.5rem;
+}
+/* box sizing for easy grids and alignment */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* code */
+pre{
+  background: #f7f7f7;
+  border-radius: 3px;
+}
+code{
+	font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+    padding: 20px 30px 30px;
+  display: block;
+  color: #696969;
+  font-size: 14px;
+  overflow-x: scroll;
 }

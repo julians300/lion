@@ -20,4 +20,5 @@ code{
   display: block;
   color: #696969;
   font-size: 14px;
+  overflow-x: scroll;
 }
