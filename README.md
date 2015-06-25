@@ -30,7 +30,7 @@ The watch command runs the same css and js functions but also watches the files 
 
 ## Change Log
 
-### 1.0.1 - 2015-06-25
+### 1.1.0 - 2015-06-25
 
 * enhancements
   * Removed the need of the 'column' and 'columns' classes within the grid for Cleaner markup.
