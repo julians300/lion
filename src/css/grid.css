@@ -6,16 +6,6 @@
   padding: 0 20px;
   position: relative;
 }
-.container:after, .row:after, .u-cf {
-  content: "";
-  display: table;
-  clear: both;
-}
-.column,
-.columns {
-  width: 100%;
-  float: left;
-  box-sizing: border-box; }
 @media (min-width: 400px) {
   .container {
     width: 85%;
@@ -24,26 +14,39 @@
 @media (min-width: 550px) {
   .container {
     width: 80%; }
-  .column,
-  .columns {
+}
+.container:after, .row:after, .u-cf {
+  content: "";
+  display: table;
+  clear: both;
+}
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .one-third, .two-thirds, .one-half {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+@media (min-width: 550px) {
+  .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .one-third, .two-thirds, .one-half {
     margin-left: 4%; }
-  .column:first-child,
-  .columns:first-child {
+  .one:first-child, .two:first-child, .three:first-child, .four:first-child, .five:first-child, .six:first-child, .seven:first-child, .eight:first-child, .nine:first-child, .ten:first-child, .eleven:first-child, .twelve:first-child, .one-third:first-child, .two-thirds:first-child, .one-half:first-child {
     margin-left: 0; }
-  .one.column,
-  .one.columns                    { width: 4.66666666667%; }
-  .two.columns                    { width: 13.3333333333%; }
-  .three.columns                  { width: 22%;            }
-  .four.columns                   { width: 30.6666666667%; }
-  .five.columns                   { width: 39.3333333333%; }
-  .six.columns                    { width: 48%;            }
-  .seven.columns                  { width: 56.6666666667%; }
-  .eight.columns                  { width: 65.3333333333%; }
-  .nine.columns                   { width: 74.0%;          }
-  .ten.columns                    { width: 82.6666666667%; }
-  .eleven.columns                 { width: 91.3333333333%; }
-  .twelve.columns                 { width: 100%; margin-left: 0; }
-  .one-third.column               { width: 30.6666666667%; }
-  .two-thirds.column              { width: 65.3333333333%; }
-  .one-half.column                { width: 48%; }
+  .one                    { width: 4.66666666667%; }
+  .two                    { width: 13.3333333333%; }
+  .three                  { width: 22%;            }
+  .one-thirds,
+  .four                   { width: 30.6666666667%; }
+  .five                   { width: 39.3333333333%; }
+  .one-half,
+  .six                    { width: 48%;            }
+  .seven                  { width: 56.6666666667%; }
+  .two-thirds,
+  .eight                  { width: 65.3333333333%; }
+  .nine                   { width: 74.0%;          }
+  .ten                    { width: 82.6666666667%; }
+  .eleven                 { width: 91.3333333333%; }
+  .twelve                 { width: 100%; margin-left: 0; }
+}
+.full-width {
+  width: 100%;
+  box-sizing: border-box;
 }

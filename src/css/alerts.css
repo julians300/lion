@@ -24,12 +24,11 @@
 .alert .close{
   position: absolute;
   right: 20px;
-  background: none;
+  background: 0 0;
   border: none;
-  line-height: 5px;
   padding: 0;
-  font-size: 10px;
-  height: 20px;
+  font-size: 16px;
+  height: 16px;
   cursor: pointer;
 }
 .alert .close:before{

@@ -18,7 +18,3 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   box-shadow: none;
   box-sizing: border-box;
 }
-.u-full-width {
-  width: 100%;
-  box-sizing: border-box;
-}
