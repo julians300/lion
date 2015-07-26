@@ -82,9 +82,6 @@ height: .125em;
 border-radius: 1px;
 margin-bottom: .2em;
 overflow: hidden;
--webkit-box-shadow: 0 1px 0 rgba(0,0,0,.25);
--moz-box-shadow: 0 1px 0 rgba(0,0,0,.25);
-box-shadow: 0 1px 0 rgba(0,0,0,.25);
 opacity: 1;
 position: relative;
 transition: all .2s;
@@ -94,11 +91,6 @@ background-color: #fff;
 }
 nav.nav.white .hamburger .line {
 background-color: #fff;
-}
-nav.expanded .hamburger .line{
-  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0);
--moz-box-shadow: 0 1px 0 rgba(0,0,0,0);
-box-shadow: 0 1px 0 rgba(0,0,0,0);
 }
 nav.expanded .hamburger .line:last-child{
     -webkit-transform: rotate(-45deg);

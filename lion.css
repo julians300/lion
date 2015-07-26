@@ -259,9 +259,6 @@ transition: all .2s;
 }
 nav.nav.bar .hamburger .line {
 background-color: #fff;
--webkit-box-shadow: 0 1px 0 rgba(0,0,0,.25);
--moz-box-shadow: 0 1px 0 rgba(0,0,0,.25);
-box-shadow: 0 1px 0 rgba(0,0,0,.25);
 }
 nav.nav.white .hamburger .line {
 background-color: #fff;
