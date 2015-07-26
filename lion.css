@@ -174,7 +174,7 @@ a{
 header{
 	background-size: cover;
 	box-sizing: border-box;	
-  overflow: auto;
+  overflow: visible;
   margin-bottom: 50px;
 }
 header.bg{
@@ -244,24 +244,42 @@ nav.nav>ul>li{
   display: none;
 }
 nav.nav .hamburger .line {
-  background-color: #2a94d6;
-  display: block;
-  width: 1.125em;
-  height: .125em;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  border-radius: 1px;
-  margin-bottom: .2em;
-  overflow: hidden;
-  }
-  nav.nav.bar .hamburger .line {
-  background-color: #fff;
-  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.25);
-  -moz-box-shadow: 0 1px 0 rgba(0,0,0,.25);
-  box-shadow: 0 1px 0 rgba(0,0,0,.25);
-  }
-  nav.nav.white .hamburger .line {
-  background-color: #fff;
+background-color: #2a94d6;
+display: block;
+width: 1.125em;
+height: .125em;
+-webkit-border-radius: 1px;
+-moz-border-radius: 1px;
+border-radius: 1px;
+margin-bottom: .2em;
+overflow: hidden;
+opacity: 1;
+position: relative;
+transition: all .2s;
+}
+nav.nav.bar .hamburger .line {
+background-color: #fff;
+-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.25);
+-moz-box-shadow: 0 1px 0 rgba(0,0,0,.25);
+box-shadow: 0 1px 0 rgba(0,0,0,.25);
+}
+nav.nav.white .hamburger .line {
+background-color: #fff;
+}
+nav.expanded .hamburger .line:last-child{
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top:-5px;
+}
+nav.expanded .hamburger .line:nth-child(2){
+opacity: 0;
+}
+nav.expanded .hamburger .line:first-child{
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top:5px;
 }
 /* Responsive */
 @media (max-width: 750px) {
