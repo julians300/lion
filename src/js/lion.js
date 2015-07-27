@@ -4,9 +4,6 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
   $("a.expand").click(function(){
-    var menuheight = $('nav.nav ul').height();
-    $("nav.nav ul").css('max-height', menuheight);
-    console.log('hello');
     $(this).parent().toggleClass('expanded');
   });
 });
