@@ -211,6 +211,9 @@ nav.nav:after{
 nav.nav a{
 	font-weight: 600;
 }
+nav.nav .expand{
+  padding: 1em 0;
+}
 nav.nav.bar a{
 	color: white;
 }
