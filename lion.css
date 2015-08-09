@@ -116,6 +116,22 @@ img{
   .ten                    { width: 82.6666666667%; }
   .eleven                 { width: 91.3333333333%; }
   .twelve                 { width: 100%; margin-left: 0; }
+
+  .one.flush              { width: 8.33333333333%; }
+  .two.flush              { width: 16.6666666666%; }
+  .three.flush            { width: 25%;            }
+  .one-thirds.flush,
+  .four.flush             { width: 33.3333333333%; }
+  .five.flush             { width: 41.6666666666%; }
+  .one-half.flush,
+  .six.flush              { width: 50%;            }
+  .seven.flush            { width: 58.3333333333%; }
+  .two-thirds.flush,
+  .eight.flush            { width: 66.6666666666%; }
+  .nine.flush             { width: 75%;          }
+  .ten.flush              { width: 83.3333333333%; }
+  .eleven.flush           { width: 91.6666666666%; }
+  .twelve.flush           { width: 100%; margin-left: 0; }
 }
 .full-width {
   width: 100%;
