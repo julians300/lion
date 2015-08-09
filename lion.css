@@ -117,6 +117,7 @@ img{
   .eleven                 { width: 91.3333333333%; }
   .twelve                 { width: 100%; margin-left: 0; }
 
+  .flush                  { margin-left: 0;        }
   .one.flush              { width: 8.33333333333%; }
   .two.flush              { width: 16.6666666666%; }
   .three.flush            { width: 25%;            }
@@ -131,7 +132,7 @@ img{
   .nine.flush             { width: 75%;          }
   .ten.flush              { width: 83.3333333333%; }
   .eleven.flush           { width: 91.6666666666%; }
-  .twelve.flush           { width: 100%; margin-left: 0; }
+  .twelve.flush           { width: 100%;           }
 }
 .full-width {
   width: 100%;
