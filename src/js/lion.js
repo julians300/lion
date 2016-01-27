@@ -1,6 +1,6 @@
 // Navigation
 $(document).ready(function(){
-	$( "nav>ul,nav.bar>ul" ).after( "<a href='javascript:;' class='expand'><span class='hamburger'><span class='line'></span><span class='line'></span><span class='line'></span></span></a>" );
+	$( "nav ul,nav.bar>ul" ).after( "<a href='javascript:;' class='expand'><span class='hamburger'><span class='line'></span><span class='line'></span><span class='line'></span></span></a>" );
 });
 $(document).ready(function(){
   $("a.expand").click(function(){
