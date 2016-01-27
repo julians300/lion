@@ -29,7 +29,7 @@ nav.nav li a{
 	display: inline-block;
 }
 
-nav.nav>ul>li:last-child a{
+nav.nav ul>li:last-child a{
 	padding-right: 0;
 }
 nav.nav:after{
@@ -60,13 +60,13 @@ nav.nav .logo a:hover{
 	  max-height: 30px;
   max-width: 200px;
 }
-nav.nav>ul{
+nav.nav ul{
 	float: right;
 	padding-bottom: 0em;
 	margin-bottom: 0;
 }
 
-nav.nav>ul>li{
+nav.nav ul>li{
 	display: inline;
 	position: relative;
 }
@@ -95,16 +95,16 @@ background-color: #fff;
 nav.nav.white .hamburger .line {
 background-color: #fff;
 }
-nav.expanded .hamburger .line:last-child{
+nav .expanded .hamburger .line:last-child{
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     transform: rotate(-45deg);
     top:-5px;
 }
-nav.expanded .hamburger .line:nth-child(2){
+nav .expanded .hamburger .line:nth-child(2){
 opacity: 0;
 }
-nav.expanded .hamburger .line:first-child{
+nav .expanded .hamburger .line:first-child{
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -120,7 +120,7 @@ nav.expanded .hamburger .line:first-child{
     right: 0;
     top: 0;
   }
-  nav.nav>ul{
+  nav.nav ul{
     float: none;
     width: 100%;
     max-height: 0px;
@@ -128,16 +128,16 @@ nav.expanded .hamburger .line:first-child{
     transition: max-height 250ms;
 
   }
-  nav.nav>ul>li:first-child{
+  nav.nav ul>li:first-child{
     padding-top: 30px;
   }
   nav.nav li a {
   padding: 1em 0;
   }
-  nav.nav>ul li{
+  nav.nav ul li{
     display: block;
   }
-  nav.nav.expanded>ul{
+  nav.nav .expanded>ul{
     max-height: 1000px;
     transition: max-height 250ms;
   }
@@ -152,14 +152,14 @@ nav.expanded .hamburger .line:first-child{
 		display: block;
 	}
 
-  nav.nav>ul>li>ul {
+  nav.nav ul>li>ul {
   margin: 0 0 0 2em;
   font-size: inherit;
 }
 }
 @media (min-width: 750px) {
   /* dropdown */
-  nav.nav>ul>li>ul{
+  nav.nav ul>li>ul{
     margin: 1em 0 0 0;
     font-size: inherit;
     position: absolute;
@@ -203,7 +203,7 @@ nav.expanded .hamburger .line:first-child{
   nav.nav ul li ul li a{
     color: white;
   }
-  nav.nav>ul>li>ul>li>a:hover{
+  nav.nav ul>li>ul>li>a:hover{
     color: #aaa;
   }
   nav.nav li ul li a{
