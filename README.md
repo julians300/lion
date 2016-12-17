@@ -18,13 +18,13 @@ Simply link `lion.min.css` in your head, and inlcude `lion.min.js` before the cl
 
 Documentation for the framework can be found on the [Lion](http://juliansalas.com/lion/).
 
-## Customizing Build
+### Customizing Build
 
 Install packages via node package manager
 
 	npm install
 
-## Gulp Commands
+### Gulp Commands
 
     gulp
 
@@ -34,7 +34,7 @@ The default gulp command runs the css and js functions. This compiles and minifi
 
 The watch command runs the same css and js functions but also watches the files while you conitinue to work on them. 
 
-## Customizations
+### Customizations
 
 Modify the `vars.less` file to change global colors and other settings to your liking.
 
