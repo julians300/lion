@@ -30,9 +30,22 @@ The watch command runs the same css and js functions but also watches the files 
 
 ## Change Log
 
-### 1.1.0 - 2015-06-25
+### 1.2.0 - 2016-12-18
 
-* enhancements
+* Changes
+  * Changed button white classes to outline and white.
+  * Changed "X" icon in alerts.
+
+* Enhancements
+  * Converted all stylesheets to use less compiler.
+  * Added Breadcrumbs
+  * Added Switches
+  * Added Tabs
+
+
+### 1.0.1 - 2015-06-25
+
+* Enhancements
   * Removed the need of the 'column' and 'columns' classes within the grid for Cleaner markup.
   * Added responsive capabilities for buttons.
   * Changed class 'u-full-width' to 'full-width'

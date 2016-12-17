@@ -1,4 +1,6 @@
-/* –––––––––––––––––––––––––– Forms –––––––––––––––––––––––––– */
+/* ==========================================================================
+   Forms
+   ========================================================================== */
 
 label, legend {
   display: block;
@@ -10,11 +12,15 @@ input, textarea, select, fieldset {
 }
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
-  height: 38px;
-  padding: 6px 10px;
+  line-height: 1em;
+  padding: 10px;
   background-color: #fff;
   border: 1px solid #D1D1D1;
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
+}
+
+select {
+  height: 40px;
 }

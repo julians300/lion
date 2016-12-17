@@ -17,3 +17,27 @@ $(document).ready(function(){
     $(this).parent().fadeOut();
   });
 });
+// switches
+$(document).ready(function(){
+	$('.switch').not('.switch-disabled').click(function() {
+		$(this).toggleClass('checked');
+	});
+});
+// Tabs
+$(document).ready(function(){
+
+
+  $('.tabs-wrap .tabs .tab:first-child').addClass('current');
+  $('.tabs-wrap .tabs-panes .tab-pane:first-child').addClass('current');
+
+  $('.tabs-wrap .tabs .tab').click(function (){
+    var dataTab = $(this).attr('data-tab');
+
+    $('.tabs-wrap .tabs .tab').removeClass('current');
+    $('.tabs-wrap .tabs-panes .tab-pane').removeClass('current');
+
+    $(this).addClass('current');
+    $('.tabs-wrap .tabs-panes .tab-pane[data-tab-pane="' + dataTab + '"]').addClass('current');
+  });
+
+});

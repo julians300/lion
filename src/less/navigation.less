@@ -1,4 +1,6 @@
-/* –––––––––––––––––––––––––– nav.navigation –––––––––––––––––––––––––– */
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
 
 header{
 	background-size: cover;
@@ -11,9 +13,6 @@ header.bg{
 }
 header.bg nav.nav li a{
 	color: white;
-}
-nav.nav{
-  margin: 1em 0;
 }
 nav.nav.bar{
 	background: #2a94d6;
@@ -29,7 +28,7 @@ nav.nav li a{
 	display: inline-block;
 }
 
-nav.nav ul>li:last-child a{
+nav.nav>ul>li:last-child a{
 	padding-right: 0;
 }
 nav.nav:after{
@@ -64,8 +63,12 @@ nav.nav ul{
 	float: right;
 	padding-bottom: 0em;
 	margin-bottom: 0;
+  margin-top: 0;
 }
 
+nav.nav ul>li>ul{
+  padding: 0;
+}
 nav.nav ul>li{
 	display: inline;
 	position: relative;
@@ -83,7 +86,7 @@ height: .125em;
 -webkit-border-radius: 1px;
 -moz-border-radius: 1px;
 border-radius: 1px;
-margin-bottom: .2em;
+margin-bottom: 4px;
 overflow: hidden;
 opacity: 1;
 position: relative;
@@ -95,16 +98,16 @@ background-color: #fff;
 nav.nav.white .hamburger .line {
 background-color: #fff;
 }
-nav .expanded .hamburger .line:last-child{
+nav.expanded .hamburger .line:last-child{
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    top:-5px;
+    top:-7px;
 }
-nav .expanded .hamburger .line:nth-child(2){
+nav.expanded .hamburger .line:nth-child(2){
 opacity: 0;
 }
-nav .expanded .hamburger .line:first-child{
+nav.expanded .hamburger .line:first-child{
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -137,7 +140,7 @@ nav .expanded .hamburger .line:first-child{
   nav.nav ul li{
     display: block;
   }
-  nav.nav .expanded>ul{
+  nav.nav.expanded>ul{
     max-height: 1000px;
     transition: max-height 250ms;
   }
