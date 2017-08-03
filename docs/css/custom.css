@@ -1,0 +1,120 @@
+
+#hero{
+	background-color: #2a94d6;
+	min-height: 500px;
+	margin-bottom: 60px;
+}
+.hero-info{
+	padding-top: 8%;
+	padding-bottom: 8%;
+}
+.hero-info{
+	line-height: 26px;
+  font-size: 22px;
+}
+
+.features .icon{
+	margin-bottom: 15px;
+	width: 50px;
+}
+.hero-info .button{
+	  margin-bottom: 20px;
+}
+
+.bower{
+	  background: rgba(34, 148, 216, .4);
+  padding: 5px 15px;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+
+section{
+	padding-top: 0px;
+}
+
+.hero-info h1{
+	font-weight: 600;
+	font-size: 52px;
+	margin-bottom: 0;
+}
+
+footer{
+	padding-top: 80px;
+}
+footer ul{
+	margin-bottom: 30px;
+}
+
+footer ul li{
+	display: inline;
+	padding:0 10px;
+}
+footer .footer-logo{
+	margin-bottom: 30px;
+}
+footer ul{
+	color: #aaa;
+}
+footer .footer-logo img{
+	width:30px;
+	margin: auto;
+	padding-bottom: 20px;
+}
+footer p{
+	color: #aaa;
+}
+.madewith p{
+	font-size: 14px;
+}
+
+.taco{
+	  width: 25px;
+  position: relative;
+  top: 3px;
+}
+
+
+
+
+.example-grid > div > div {
+  background: #EEE;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: .75rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
+}
+
+
+
+
+
+
+
+
+
+/*   */
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+

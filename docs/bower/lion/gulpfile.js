@@ -8,7 +8,7 @@ var less       = require('gulp-less');
 var autoprefix = require('gulp-autoprefixer');
 
 var paths = {
-  less: ['src/less/lion.less'],
+  less: ['src/less/vars.less', 'src/less/info.less', 'src/less/normalize.less', 'src/less/grid.less', 'src/less/typography.less', 'src/less/*.less'],
   javascripts: ['src/js/*.js']
 };
 
@@ -22,21 +22,21 @@ gulp.task('css',function(){
     cascade: true
   }))
   .pipe(concat('lion.css'))
-  .pipe(gulp.dest('./dist'))
+  .pipe(gulp.dest('./'))
   .pipe(minifycss())
   .pipe(rename('lion.min.css'))
   .pipe(header('/* Lion Framework - Compiled on <%= new Date() %> */ \n'))
-  .pipe(gulp.dest('./dist'))
+  .pipe(gulp.dest('./'))
 })
 
 // JS Tasks - Uglify
 gulp.task('js',function(){
   return gulp.src(['src/js/lion.js'])
-  .pipe(gulp.dest('./dist'))
+  .pipe(gulp.dest('./'))
   .pipe(uglifyjs())
   .pipe(rename('lion.min.js'))
   .pipe(header('/* Lion Framework - Compiled on <%= new Date() %> */ \n'))
-  .pipe(gulp.dest('./dist'))
+  .pipe(gulp.dest('./'))
 })
 
 // The default task (called when you run `gulp` from cli)

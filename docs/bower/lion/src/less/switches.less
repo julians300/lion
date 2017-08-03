@@ -1,0 +1,79 @@
+/* ==========================================================================
+   Switches
+   ========================================================================== */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 22px;
+  min-width: 44px;
+  line-height: 20px;
+  vertical-align: middle;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  .switch-inner{
+    color: #fff;
+    font-size: 12px;
+    margin-left: 24px;
+    margin-right: 6px;
+    display: block;
+  }
+
+  &.checked{
+    border-color: @switchColor;
+    background-color: @switchColor;
+
+    .switch-inner {
+      margin-left: 6px;
+      margin-right: 24px;
+    }
+
+    &:after {
+      left: 100%;
+      margin-left: -19px;
+    }
+
+    &:active:after{
+      margin-left: -25px;
+    }
+  }
+
+  &:after {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 1px;
+    top: 1px;
+    border-radius: 18px;
+    background-color: #fff;
+    content: " ";
+    cursor: pointer;
+    -webkit-transition: all 0.3s, width 0.3s;
+    transition: all 0.3s, width 0.3s;
+  }
+
+  &:active:after{
+    width: 24px;
+  }
+
+  &.switch-disabled {
+    cursor: not-allowed;
+    background-color: #dedede;
+    border-color: #dedede;
+
+    &:after{
+      cursor: not-allowed;
+      background-color: #c5c5c5;
+    }
+  }
+}
