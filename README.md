@@ -38,6 +38,6 @@ The watch command runs the same css and js functions but also watches the files 
 
 Modify the `vars.less` file to change global colors and other settings to your liking.
 
-## License
+## Copyright and license
 
-Lion framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Lion framework is open-sourced software licensed under the [MIT license](https://github.com/julians300/lion/blob/master/LICENSE).
