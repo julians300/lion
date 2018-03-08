@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="canonical" href="https://juliansalas.com/lion/" />
   <!-- Lion -->
-  <link rel="stylesheet" href="../lion/lion.min.css">
+  <link rel="stylesheet" href="../dist/lion.min.css">
   <!-- <link rel="stylesheet" href="bower/lion/lion.min.css"> -->
   <link rel="stylesheet" href="css/custom.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="../lion/lion.min.js"></script>
+  <script src="../dist/lion.min.js"></script>
   <!-- <script src="bower/lion/lion.min.js"></script> -->
 </head>
 <body>
