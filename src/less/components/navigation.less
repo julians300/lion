@@ -1,6 +1,229 @@
-/* ==========================================================================
-   Navigation
-   ========================================================================== */
+@navbarTextColor: #4a4a4a;
+@dropdownSpeed: .15s;
+
+.navbar {
+  background-color: white;
+  position: relative;
+  min-height: 3.25rem;
+  align-items: stretch;
+  display: flex;
+
+  .navbar-brand{
+    align-items: stretch;
+    display: flex;
+    flex-shrink: 0;
+    max-width: 100vw;
+    min-height: 3.25rem;
+  }
+
+  .navbar-item {
+    color: @navbarTextColor;
+    display: block;
+    line-height: 1.5;
+    padding: 0.5rem 1rem;
+    position: relative;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    align-items: center;
+    display: flex;
+
+    img {
+      max-height: 1.75rem;
+    }
+
+    &.has-dropdown {
+      padding: 0;
+
+      &:hover {
+        color: lighten(@navbarTextColor, 10%);
+      }
+
+      .navbar-link {
+        padding: 1rem 2.5rem 1rem 1rem;
+
+        &:after {
+          border: 2px solid;
+          border-color: @navbarTextColor;
+          border-right: 0;
+          border-top: 0;
+          content: " ";
+          display: block;
+          height: 0.35em;
+          width: 0.35em;
+          pointer-events: none;
+          position: absolute;
+          -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+          margin-top: -0.375em;
+          right: 1.125em;
+          top: 50%;
+        }
+      }
+    }
+
+    &.hamburger {
+      display: none;
+      cursor: pointer;
+      height: 3.25rem;
+      position: relative;
+      width: 3.25rem;
+      margin-left: auto;
+    }
+  }
+
+  a.navbar-item {
+    &:hover {
+      color: lighten(@navbarTextColor, 10%);
+
+      &.has-dropdown {
+      .navbar-link{
+        &:after {
+          border-color: whitesmoke;
+        }
+      }
+    }
+    }
+    
+  }
+
+  .navbar-dropdown {
+    margin: 0;
+    padding: 10px 0px;
+    top: 80%;
+    left: 0;
+    font-size: inherit;
+    position: absolute;
+    background: #fff;
+    opacity: 0;
+    z-index: 100;
+    min-width: 100%;
+    max-width: 400px;
+    pointer-events: none;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(26,53,71,.2), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    transition: all @dropdownSpeed ease;
+
+    .navbar-item {
+      padding: 0.2rem 1rem;
+
+      &:hover {
+        background-color: whitesmoke;
+      }
+    }
+  }
+
+  .navbar-item:hover {
+    .navbar-dropdown {
+      display: block;
+      opacity: 1;
+      top: 90%;
+      pointer-events: auto;
+      transform: rotate3d(0,0,0,0deg);
+    }
+  }
+
+  .navbar-link {
+    color: #4a4a4a;
+    display: block;
+    line-height: 1.5;
+    padding: 1rem 1rem;
+    position: relative;
+
+    &:hover {
+      color: lighten(@navbarTextColor, 10%);
+    }
+  }
+
+  .navbar-menu {
+    align-items: stretch;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+
+  .navbar-menu-left {
+    align-items: stretch;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: auto;
+  }
+
+  .navbar-menu-right {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-left: auto;
+    align-items: stretch;
+    display: flex;
+  }
+
+  .navbar-hamburger {
+    position: relative;
+    top: 0.25em;
+
+    span {
+      background-color: #fff;
+      background-color: #2a94d6;
+      display: block;
+      width: 1.125em;
+      height: .125em;
+      -webkit-border-radius: 1px;
+      -moz-border-radius: 1px;
+      border-radius: 1px;
+      margin-bottom: 4px;
+      overflow: hidden;
+      opacity: 1;
+      position: relative;
+      top: 0px;
+      transition: all .15s;
+    }
+  }
+  .navbar-item.hamburger.expanded {
+    .navbar-hamburger {
+      span {
+        &:first-child{
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          transform: rotate(45deg);
+          top:5px;
+        }
+        &:nth-child(2){
+          opacity: 0;
+        }
+        &:last-child{
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            top:-7px;
+        }
+      }
+    }
+  }
+}
+
+.container > .navbar {
+  margin: 0 -1rem;
+}
+
+@media screen and (max-width: @breakpoint-desktop) {
+  .navbar {
+    display: block;
+    .navbar-menu{
+      display: none;
+    }
+    .navbar-item {
+      &.hamburger {
+        display: flex;
+      }
+    }
+  }
+}
+
+
+
+
+// 
 
 nav.nav {
   margin-bottom: 15px;

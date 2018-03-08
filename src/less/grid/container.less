@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  max-width: @container-max;
+  margin: 0 auto;
+  padding: 0 @container-padding;
+  position: relative;
+}
+
+.full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: @breakpoint-phone) {
+	.container {
+	    width: 80%;
+	}
+	.container:after, .row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+}

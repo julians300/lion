@@ -1,36 +1,15 @@
-/* ==========================================================================
-   Grid
-   ========================================================================== */
 
-.container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-  position: relative;
-}
-@media (min-width: 400px) {
-  .container {
-    width: 85%;
-    padding: 0; }
-}
-@media (min-width: 550px) {
-  .container {
-    width: 80%; }
-}
-.container:after, .row:after, .u-cf {
-  content: "";
-  display: table;
-  clear: both;
-}
 .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .one-third, .two-thirds, .one-half {
   width: 100%;
-  float: left;
+  float: none;
   box-sizing: border-box;
 }
-@media (min-width: 550px) {
+
+@media (min-width: @breakpoint-tablet) {
   .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .one-third, .two-thirds, .one-half {
-    margin-left: 4%; }
+    float: left;
+    margin-left: 4%;
+  }
   .one:first-child, .two:first-child, .three:first-child, .four:first-child, .five:first-child, .six:first-child, .seven:first-child, .eight:first-child, .nine:first-child, .ten:first-child, .eleven:first-child, .twelve:first-child, .one-third:first-child, .two-thirds:first-child, .one-half:first-child {
     margin-left: 0; }
   .one                    { width: 4.66666666667%; }
@@ -66,7 +45,4 @@
   .eleven.flush           { width: 91.6666666666%; }
   .twelve.flush           { width: 100%;           }
 }
-.full-width {
-  width: 100%;
-  box-sizing: border-box;
-}
+

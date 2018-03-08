@@ -3,110 +3,141 @@
       <h2>Navbar</h2>
       <p>The only classes needed is the "logo" class to identify the branding. The CSS is smart enough to know that the first ul is the navigation and any child ul elements are dropdowns.</p>
       <p>Add the class "bar" to the nav tag to wrap it in a background color.</p>
-      <div class="row">
-        <nav class="nav">
-          <div class="logo">
-            <a href="#!">Brand</a>
+    
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a href="#!" class="navbar-item">
+            <img src="img/logo-b.png" alt="Lion">
+          </a>
+          <a class="navbar-item hamburger">
+            <span class="navbar-hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </a>
+        </div>
+        <div class="navbar-menu">
+          <div class="navbar-menu-left">
+            <a class="navbar-item" href="#">
+              Home
+            </a>
+            <div class="navbar-item has-dropdown">
+              <a href="#!" class="navbar-link">About</a>
+              <div class="navbar-dropdown ">
+                <a class="navbar-item " href="#">
+                  Overview
+                </a>
+              </div>
+            </div>
+            <div class="navbar-item has-dropdown">
+              <a href="#!" class="navbar-link">Dropdown</a>
+              <div class="navbar-dropdown ">
+                <a class="navbar-item " href="#">Overview</a>
+                <a class="navbar-item " href="#">Overview items</a>
+              </div>
+            </div>
           </div>
-          <ul class="menu">
-            <li><a href="#!">Link</a></li>
-            <li>
-              <a href="#!">Dropdown</a>
-              <ul>
-                <li><a href="#!">DLink</a></li>
-              </ul>
-            </li>
-            <li><a href="#!">Logout</a></li>
-          </ul>
-        </nav>
-      </div>
+          <div class="navbar-menu-right">
+            <a class="navbar-item" href="#">
+              Contact
+            </a>
+            <div class="navbar-item">
+              <a href="#!" class="button">Login</a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-      <div class="row">
-        <nav class="nav bar">
-          <div class="logo">
-            <a href="#!">Brand</a>
-          </div>
-          <ul class="menu">
-            <li><a href="#!">Link</a></li>
-            <li>
-              <a href="#!">Dropdown</a>
-              <ul>
-                <li><a href="#!">Link</a></li>
-              </ul>
-            </li>
-            <li><a href="#!">Link</a></li>
-            
-          </ul>
-          
-        </nav>
-      </div>
       <div class="row">
 <pre><code>
-&lt;nav class="nav"&gt;
+&lt;nav class="navbar">
 
-  &lt;div class="logo"&gt;
+  &lt;div class="navbar-brand">
 
-    &lt;a href="#"&gt;Brand&lt;/a&gt;
+    &lt;a href="#!" class="navbar-item">
 
-  &lt;/div&gt;
+      &lt;img src="img/logo-b.png" alt="Lion">
 
-  &lt;ul&gt;
+    &lt;/a>
 
-    &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+    &lt;a class="navbar-item hamburger">
 
-    &lt;li&gt;
+      &lt;span class="navbar-hamburger">
 
-      &lt;a href="#"&gt;Dropdown&lt;/a&gt;
+        &lt;span>&lt;/span>
 
-      &lt;ul&gt;
+        &lt;span>&lt;/span>
 
-        &lt;li&gt;&lt;a href="2"&gt;DLink&lt;/a&gt;&lt;/li&gt;
+        &lt;span>&lt;/span>
 
-      &lt;/ul&gt;
+      &lt;/span>
 
-    &lt;/li&gt;
+    &lt;/a>
 
-    &lt;li&gt;&lt;a href="#"&gt;Logout&lt;/a&gt;&lt;/li&gt;
+  &lt;/div>
 
-  &lt;/ul&gt;
+  &lt;div class="navbar-menu">
 
-&lt;/nav&gt;
+    &lt;div class="navbar-menu-left">
 
+      &lt;a class="navbar-item" href="#">
 
+        Home
 
-&lt;!-- nav bar --&gt;
+      &lt;/a>
 
+      &lt;div class="navbar-item has-dropdown">
 
+        &lt;a href="#!" class="navbar-link">About&lt;/a>
 
-&lt;nav class="nav bar"&gt;
+        &lt;div class="navbar-dropdown ">
 
-  &lt;div class="logo"&gt;
+          &lt;a class="navbar-item " href="#">
 
-    &lt;a href="#"&gt;Brand&lt;/a&gt;
+            Overview
 
-  &lt;/div&gt;
+          &lt;/a>
 
-  &lt;ul&gt;
+        &lt;/div>
 
-    &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;/div>
 
-    &lt;li&gt;
+      &lt;div class="navbar-item has-dropdown">
 
-      &lt;a href="#"&gt;Dropdown&lt;/a&gt;
+        &lt;a href="#!" class="navbar-link">Dropdown&lt;/a>
 
-      &lt;ul&gt;
+        &lt;div class="navbar-dropdown ">
 
-        &lt;li&gt;&lt;a href="2"&gt;DLink&lt;/a&gt;&lt;/li&gt;
+          &lt;a class="navbar-item " href="#">Overview&lt;/a>
 
-      &lt;/ul&gt;
+          &lt;a class="navbar-item " href="#">Overview items&lt;/a>
 
-    &lt;/li&gt;
+        &lt;/div>
 
-    &lt;li&gt;&lt;a href="#"&gt;Logout&lt;/a&gt;&lt;/li&gt;
+      &lt;/div>
 
-  &lt;/ul&gt;
+    &lt;/div>
 
-&lt;/nav&gt;
+    &lt;div class="navbar-menu-right">
+
+      &lt;a class="navbar-item" href="#">
+
+        Contact
+
+      &lt;/a>
+
+      &lt;div class="navbar-item">
+
+        &lt;a href="#!" class="button">Login&lt;/a>
+
+      &lt;/div>
+
+    &lt;/div>
+
+  &lt;/div>
+
+&lt;/nav>
 
 </code></pre>
 

@@ -44,7 +44,7 @@ gulp.task('default', ['css', 'js']);
 
 // Watch Task - Watch All CSS and JS Files
 gulp.task('watch', function() {
-  gulp.watch(paths.less, ['css'])
+  gulp.watch('src/less/**/**.*', ['css'])
   gulp.watch(paths.javascripts, ['js'])
 });
 

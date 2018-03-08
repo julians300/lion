@@ -7,6 +7,12 @@ $(document).ready(function(){
     $(this).parent().toggleClass('expanded');
   });
 });
+
+$(document).ready(function(){
+  $(".navbar-item.hamburger").click(function(){
+    $(this).toggleClass('expanded');
+  });
+});
 // Alerts
 $(document).ready(function(){
 	$( ".alert" ).append( "<button class='close'></button>" );
