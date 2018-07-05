@@ -49,8 +49,8 @@
             <div class="navbar-item has-dropdown">
               <a href="#!" class="navbar-link">Examples</a>
               <div class="navbar-dropdown ">
-                <a class="navbar-item" href="/examples/home1">Home Page 1</a>
-                <a class="navbar-item" href="/examples/home2">Home Page 2</a>
+                <a class="navbar-item" href="example/home1">Home Page 1</a>
+                <a class="navbar-item" href="example/home2">Home Page 2</a>
                 <?php // <a class="navbar-item" href="#">Pricing Page</a> ?>
                 <?php // <a class="navbar-item" href="#">Contact Page</a> ?>
               </div>
