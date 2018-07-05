@@ -101,10 +101,6 @@ section {
   font-weight: 600;
 }
 
-.components-wrap {
-	overflow: hidden;
-}
-
 .components-wrap section:first-child {
 	padding-top: 0;
 }
@@ -167,9 +163,7 @@ footer p{
 }
 
 .docs-wrap {
-	display: grid;
-    grid-template-columns: 300px 1fr;
-    grid-gap: 20px;
+
 }
 
 .columns-section .columns{
@@ -179,6 +173,17 @@ footer p{
 	background: #eee;
 	border-radius: 6px;
 	padding: 15px;
+}
+
+@media screen and (min-width: 900px) {
+	.docs-wrap .table-of-contents{
+		width: 300px;
+		float: left;
+	}
+	.docs-wrap .components-wrap {
+		float: left;
+		width: calc(100% - 300px);
+	}
 }
 
 @media screen and (max-width: 900px) {
