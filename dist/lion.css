@@ -1887,6 +1887,9 @@ code {
   nav.navbar .navbar-item {
     display: block;
   }
+  nav.navbar .navbar-item.has-dropdown {
+    padding: 0;
+  }
   nav.navbar .navbar-item.hamburger {
     display: -webkit-box;
     display: -webkit-flex;
