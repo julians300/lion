@@ -1,5 +1,4 @@
-<section>
-    <div class="container">
+<section id="navbar">
       <h2>Navbar</h2>
       <p>The only classes needed is the "logo" class to identify the branding. The CSS is smart enough to know that the first ul is the navigation and any child ul elements are dropdowns.</p>
       <p>Add the class "bar" to the nav tag to wrap it in a background color.</p>
@@ -9,13 +8,13 @@
           <a href="#!" class="navbar-item">
             <img src="img/logo-b.png" alt="Lion">
           </a>
-          <a class="navbar-item hamburger">
+          <button class="navbar-item hamburger">
             <span class="navbar-hamburger">
               <span></span>
               <span></span>
               <span></span>
             </span>
-          </a>
+          </button>
         </div>
         <div class="navbar-menu">
           <div class="navbar-menu-left">
@@ -61,7 +60,7 @@
 
     &lt;/a>
 
-    &lt;a class="navbar-item hamburger">
+    &lt;button class="navbar-item hamburger">
 
       &lt;span class="navbar-hamburger">
 
@@ -73,7 +72,7 @@
 
       &lt;/span>
 
-    &lt;/a>
+    &lt;/button>
 
   &lt;/div>
 
@@ -142,5 +141,4 @@
 </code></pre>
 
       </div>
-    </div>
   </section>

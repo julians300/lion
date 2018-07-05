@@ -1,29 +1,13 @@
 module.exports = {
-    // module: {
-    //     rules: [{
-    //         test: /\.scss$/,
-    //         use: [{
-    //             loader: "style-loader"
-    //         }, {
-    //             loader: "css-loader"
-    //         }, {
-    //             loader: "sass-loader",
-    //             options: {
-    //                 includePaths: ["absolute/path/a", "absolute/path/b"]
-    //             }
-    //         }]
-    //     }]
-    // },
+    entry: require.resolve('./src/less/lion.less'),
+    output: {
+        path: './',
+        filename: 'main.css'
+    },
     module: {
         rules: [{
-            test: /\lion.less$/,
-            use: [{
-                loader: 'style-loader' // creates style nodes from JS strings
-            }, {
-                loader: 'css-loader' // translates CSS into CommonJS
-            }, {
-                loader: 'less-loader' // compiles Less to CSS
-            }]
-        }]
+            test: /\.less$/,
+            loaders: ['style', 'css', 'less']
+          }]
     }
 };

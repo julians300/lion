@@ -1,5 +1,4 @@
-<section>
-    <div class="container">
+<section id="tables">
       <h2>Tables</h2>
       <p>Use semantic markup and it works as well.</p>
       <table>
@@ -171,5 +170,4 @@
 
 </code></pre>
       </div>
-    </div>
   </section>

@@ -1,5 +1,4 @@
-<section>
-    <div class="container">
+<section id="lists">
       <h2>Lists</h2>
       <p>No special classes needed for lists. Use semantic markup and they just work :)</p>
       <div class="row">
@@ -80,5 +79,4 @@
 
 </code></pre>
       </div>
-    </div>
   </section>

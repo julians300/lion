@@ -4,48 +4,50 @@
 
 body{
   color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
 }
 p{
-	line-height: 1.5em;
-	margin: 0 0 2em 0;
+	line-height: 1.75em;
+	margin: 0 0 1.5em;
 }
 h1,h2,h3,h4,h5,h6 {
-  line-height: 1em;
-  letter-spacing: -.02em;
-  
+  font-weight: 500;
+  line-height: 1.5em;
+  margin-top: 0;
+  margin-bottom: .5rem;
 }
 h1{
-  font-size: 2em;
-  margin-bottom: .5em;
+  font-size: 2.5em;
 }
 h2{
-	font-size: 1.5em;
-	margin-bottom: .6em;
+	font-size: 2em;
 }
 h3{
-	font-size: 1.25em;
+	font-size: 1.5em;
   line-height: 1.2em;
-  margin-bottom: .7em;
 }
 h4{
 	font-size: 1em;
   line-height: 1.5em;
-  margin-bottom: .8em;
 }
 h5{
 	font-size: 0.875em;
   line-height: 1.14286em;
-  margin-bottom: .9em;
 }
 h6{
 	font-size: 0.75em;
   line-height: 1.33333em;
-  margin-bottom: 1em;
 }
 
-a{
+a {
 	text-decoration: none;
-	color: @linkColor;
+  color: @linkColor;
+  
+  &:hover,
+  &:focus {
+    color: darken(@linkColor, 30%);
+  }
 }
 
 .title{

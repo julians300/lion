@@ -1,5 +1,4 @@
-<section>
-  <div class="container">
+<section id="breadcrumbs">
     <h2>Breadcrumbs</h2>
     <div class="row">
       <div class="breadcrumbs">
@@ -28,5 +27,4 @@
 
 &lt;/div>
 </code></pre>
-    </div>
 </section>

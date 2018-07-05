@@ -27,6 +27,7 @@ gulp.task('css',function(){
   .pipe(rename('lion.min.css'))
   .pipe(header('/* Lion Framework - Compiled on <%= new Date() %> */ \n'))
   .pipe(gulp.dest('./dist'))
+  .pipe(gulp.dest('./docs/css'))
 })
 
 // JS Tasks - Uglify
@@ -37,6 +38,7 @@ gulp.task('js',function(){
   .pipe(rename('lion.min.js'))
   .pipe(header('/* Lion Framework - Compiled on <%= new Date() %> */ \n'))
   .pipe(gulp.dest('./dist'))
+  .pipe(gulp.dest('./docs/js'))
 })
 
 // The default task (called when you run `gulp` from cli)
