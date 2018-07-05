@@ -284,12 +284,31 @@
       &.hamburger {
         display: flex;
       }
+      
+    }
+    .navbar-dropdown {
+      .navbar-item {
+        padding: .5rem 1rem .5rem 2rem;
+      }
     }
 
     &.expanded {
       .navbar-menu {
         display: block;
       }
+    }
+
+    &.light {
+      .navbar-item {
+        &.has-dropdown{
+          .navbar-dropdown {
+            .navbar-item {
+              color: white;
+            }
+          }
+        }
+      }
+      
     }
   }
 }

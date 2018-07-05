@@ -1894,8 +1894,14 @@ code {
     display: -ms-flexbox;
     display: flex;
   }
+  nav.navbar .navbar-dropdown .navbar-item {
+    padding: .5rem 1rem .5rem 2rem;
+  }
   nav.navbar.expanded .navbar-menu {
     display: block;
+  }
+  nav.navbar.light .navbar-item.has-dropdown .navbar-dropdown .navbar-item {
+    color: white;
   }
 }
 @media screen and (min-width: 1050px) {
