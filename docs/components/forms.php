@@ -1,5 +1,4 @@
-<section>
-    <div class="container">
+<section id="forms">
       <h2>Forms</h2>
       <div class="row">
         <form>
@@ -19,7 +18,7 @@
           </div>
           <label for="exampleMessage">Message</label>
           <textarea class="full-width" placeholder="Hello" id="exampleMessage"></textarea>
-          <input class="button" type="submit" value="Submit">
+          <input class="button primary" type="submit" value="Submit">
         </form>
       </div>
       <div class="row">
@@ -59,11 +58,10 @@
   
   &lt;textarea class="full-width" placeholder="Hello" id="exampleMessage"&gt;&lt;/textarea&gt;
   
-  &lt;input class="button" type="submit" value="Submit"&gt;
+  &lt;input class="button primary" type="submit" value="Submit"&gt;
   
 &lt;/form&gt;
 
 </code></pre>
       </div>
-    </div>
   </section>

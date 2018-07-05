@@ -1,5 +1,4 @@
-<section>
-    <div class="container">
+<section id="typography">
       <h2>Typography</h2>
       <div class="row">
         <div class="six ">
@@ -15,5 +14,4 @@
           <p>Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing elit</a>. Facere, quisquam, dignissimos. Voluptate animi assumenda eos consequuntur repudiandae soluta. Similique dolorum voluptas vel ducimus doloribus, beatae hic. Cupiditate repudiandae assumenda animi architecto est nihil fuga perferendis, harum dolor provident impedit similique <a href="#">doloremque</a> eum voluptas porro adipisci molestias autem maxime, a odio.</p>
         </div>
       </div>
-    </div>
   </section>

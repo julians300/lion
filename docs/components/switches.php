@@ -1,5 +1,4 @@
-<section>
-  <div class="container">
+<section id="switches">
     <h2>Switches</h2>
     <div class="row">
       <div>
@@ -32,5 +31,4 @@
 &lt;/span>
 </code></pre>
     </div>
-  </div>
 </section>

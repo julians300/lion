@@ -1,10 +1,11 @@
 // Navigation
 $(document).ready(function(){
-	$( "nav.nav ul.menu" ).after( "<a href='javascript:;' class='expand'><span class='hamburger'><span class='line'></span><span class='line'></span><span class='line'></span></span></a>" );
+	$( "nav.nav ul.menu" ).after( "<button class='expand'><span class='hamburger'><span class='line'></span><span class='line'></span><span class='line'></span></span></button>" );
 });
 $(document).ready(function(){
-  $("a.expand").click(function(){
-    $(this).parent().toggleClass('expanded');
+  $(".navbar-item.hamburger").click(function(){
+    $(this).toggleClass('expanded');
+    $(this).parents('.navbar').toggleClass('expanded');
   });
 });
 // Alerts
