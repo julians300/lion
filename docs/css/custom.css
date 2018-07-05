@@ -216,3 +216,9 @@ footer p{
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
 
+@media screen and  (max-width: 440px) {
+	#hero h1 {
+		font-size: 48px;
+	}
+}
+
