@@ -1,5 +1,4 @@
-<section>
-  <div class="container">
+<section id="tabs">
     <h2>Tabs</h2>
     <p>Use data-tab attributes to specify which content belongs to which tab.</p>
     <div class="row">
@@ -41,5 +40,4 @@
 
 &lt;/div>
 </code></pre>
-    </div>
 </section>

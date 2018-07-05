@@ -1,5 +1,4 @@
-<section>
-    <div class="container">
+<section id="alerts">
       <h2>Alerts</h2>
       <p>A simple div tag with the alert class will create a nice alert for your users. The close buttons are automatically added.</p>
       <p>The four classes that can be added are "success", "danger", "warning", "info".</p>
@@ -29,5 +28,4 @@
 &lt;/div&gt;
 </code></pre>
       </div>
-    </div>
   </section>

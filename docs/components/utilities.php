@@ -1,5 +1,4 @@
-<section>
-    <div class="container">
+<section id="utilities">
       <h2>Utilities</h2>
       <p>Helper classes for common styles/</p>
       <div class="row">
@@ -7,5 +6,4 @@
 
 </code></pre>
       </div>
-    </div>
   </section>

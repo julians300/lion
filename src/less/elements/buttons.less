@@ -19,19 +19,31 @@
   cursor: pointer;
   box-sizing: border-box;
   color: #FFF;
-  background-color: @buttonPrimaryColor;
-  border-color: @buttonPrimaryColor;
+  background-color: #fff;
+  box-shadow: 0 0 0 1px rgba(20,11,47,0.1), 0 2px 4px -2px rgba(0,0,0,0.2);
+  color: #726d82;
+  border: transparent;
 
   &:hover {
-    color: #FFF;
-    background-color: darken(@buttonPrimaryColor, 10%);
-    border-color: darken(@buttonPrimaryColor, 10%);
+    background-color: darken(#fff, 2%);
+  }
+
+  &.primary {
+    color: #fff;
+    background-color: @buttonPrimaryColor;
+    box-shadow: 0 0 0 1px @buttonPrimaryColor, 0 2px 4px -2px rgba(0,0,0,0.2);
+
+    &:hover {
+      color: #FFF;
+      background-color: darken(@buttonPrimaryColor, 10%);
+      border-color: darken(@buttonPrimaryColor, 10%);
+    }
   }
 
   &.secondary{
     color: #FFF;
     background-color: @buttonSecondaryColor;
-    border-color: @buttonSecondaryColor;
+    box-shadow: 0 0 0 1px @buttonSecondaryColor, 0 2px 4px -2px rgba(0,0,0,0.2);
 
     &:hover{
       color: #FFF;
@@ -42,25 +54,32 @@
 
   &.white {
     border-color: transparent;
-    color: @buttonPrimaryColor;
+    color: #726d82;
     background-color: white;
+
+    &:focus {
+      box-shadow: 0 0 0 1px rgba(20,11,47,0.1), 0 0 0 4px rgba(255, 255, 255, 0.488);
+      outline: 0;
+    }
   }
 
   &.outline {
-    border-color: white;
-    color: white;
+    color: #fff;
     background-color: transparent;
+    border-color: white;
+    border: 1px solid white;
+    box-shadow: none;
 
     &:hover {
       background-color: rgba(255,255,255, 0.2);
     }
   }
 
-}
+  &:focus {
+      box-shadow: 0 0 0 1px rgba(20,11,47,0.1), 0 0 0 4px rgba(61, 162, 244, 0.413);
+      outline: 0;
+  }
 
-a.button{
-  position: relative;
-  top: -1px;
 }
 
 @media (max-width: 550px) {
