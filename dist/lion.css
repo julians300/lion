@@ -1313,7 +1313,6 @@ code {
   color: #696969;
   font-size: 14px;
   overflow-x: scroll;
-  white-space: pre-wrap;
 }
 .container {
   width: 100%;

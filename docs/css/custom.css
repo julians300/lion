@@ -101,6 +101,10 @@ section {
   font-weight: 600;
 }
 
+.components-wrap {
+	overflow: hidden;
+}
+
 .components-wrap section:first-child {
 	padding-top: 0;
 }
