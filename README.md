@@ -2,7 +2,7 @@
 
 Lion is a front went framework that is very opinionated. I designed it to be a boilerplate framework to quickly get a design up without needing to use too much custom markup. The idea is to be very basic and semantic with the markup so that it can be customized later.
 
-> **Note:** This is a work in progress and still needs some tweaking and more components to be a complete framework. I am adding more components as I need them. 
+> **Note:** This is a work in progress and still needs some tweaking and more components to be a complete framework. I am adding more components as I need them. Feel free to submit a pull request :)
 
 ## Installation
 
@@ -16,7 +16,7 @@ Simply link `lion.min.css` in your head, and inlcude `lion.min.js` before the cl
 
 ## Official Documentation
 
-Documentation for the framework can be found on the [Lion](http://juliansalas.com/lion/).
+Documentation for the framework can be found on the [Lion Website](http://juliansalas.com/lion/).
 
 ### Customizing Build
 
